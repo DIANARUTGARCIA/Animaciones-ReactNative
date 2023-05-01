@@ -13,10 +13,17 @@ const Animacion5 = () => {
   const presionarBtn = () => {
     Animated.spring(animacion, {
       toValue: 0.8,
-       useNativeDriver: false,
+      useNativeDriver: false,
     }).start();
   };
-  const soltarB = () => {};
+  const soltarB = () => {
+    Animated.spring(animacion, {
+      toValue: 1,
+      friction: 4, //rebote de la animación, mas bajo mayor robote
+      tension: 60,
+      useNativeDriver: false,
+    }).start();
+  };
 
   const estiloAnimacion = {
     transform: [{scale: animacion}],
