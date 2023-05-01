@@ -13,6 +13,7 @@ import Animacion3 from './components/Animacion3';
 import Animacion4 from './components/Animacion4';
 import Animacio5 from './components/Animacion4';
 import Animacion5 from './components/Animacion5';
+import Animacion6 from './components/Animacion6';
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
       <Animacion2/> */}
       {/* <Animacion3/>
       <Animacion4/> */}
-      <Animacion5/>
+      {/* <Animacion5/> */}
+      <Animacion6/>
     </View>
   );
 }
